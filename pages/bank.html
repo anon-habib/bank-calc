@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="title" content="Site Title Here"> -->
+    <!-- <meta name="description" content="Site Description Here"> -->
+    <!-- <meta name="keywords" content="Site, Keywords, Here"> -->
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="Habibur Rahman Ove">
+    <title>Welcome @ Habib's Bank</title>
+
+    <!-- font awesome link, version 6.1.1 -->
+    <script src="https://kit.fontawesome.com/d0f9282d95.js" crossorigin="anonymous"></script>
+
+    <!-- CSS links -->
+    <!-- Tailwind CSS version 3.1.8 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header>
+        <div class="text-center">
+            <h1 class="text-5xl text-center mt-6">Let's get some <span class="font-semibold">Money</span>!</h1>
+        <button id="btn-logout"
+                        class="bg-red-600 hover:bg-red-700 transition duration-150 px-7 py-2 text-white font-medium rounded-lg md:ml-5 lg:ml-8 2xl:ml-10 mt-7 inline-block">Logout</button>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+
+        <!-- calculations -->
+        <section class="mt-12">
+            <div class="grid lg:grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-400 p-9 rounded-xl ofs">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-red-400 p-9 rounded-xl ofs">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-yellow-400 p-9 rounded-xl ofs">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h2 class="text-5xl">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- deposite and withdraw input field -->
+        <section class="mt-12">
+            <div class="grid md:grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-green-200 p-9 rounded-xl">
+                    <h3 class="md:text-2xl text-xl mb-4 text-black">Please Deposit</h3>
+                    <input class="w-9/12 block mb-4 px-3" type="number" id="deposit-field"
+                        placeholder="$ Amount you want to deposit">
+                    <button id="btn-deposit"
+                        class="bg-green-600 hover:bg-green-700 transition duration-150 px-7 py-2 text-white font-medium rounded-lg">Deposit</button>
+                </div>
+
+                <div class="bg-red-200 p-9 rounded-xl">
+                    <h3 class="md:text-2xl text-xl mb-4 text-black">Please Withdraw</h3>
+                    <input id="withdraw-field" class="w-9/12 block mb-4 px-3" type="number"
+                        placeholder="$ Amount you want to withdraw">
+                    <button id="btn-withdraw"
+                        class="bg-red-600 hover:bg-red-700 transition duration-150 px-7 py-2 text-white font-medium rounded-lg">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="mt-12 text-center">
+        <div>
+            <h1>
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> &#169; <strong>Habibur Rahman Ove</strong>
+            </h1>
+            <h2>All rights reserved.</h2>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- javascript links -->
+    <script src="../js/deposit.js"></script>
+    <script src="../js/withdraw.js"></script>
+    <script src="../js/logout.js"></script>
+
+</body>
+
+</html>
