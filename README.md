@@ -1,1 +1,2 @@
-# bank-calc
+# Fun Project
+A simple Bank Calculation Simulator
